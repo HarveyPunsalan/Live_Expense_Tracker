@@ -1,10 +1,10 @@
 :root {
-    --primary-color: #1e2d3d;
-    --accent-color: #2eb89a;
-    --background-color: #f0f2f5;
-    --surface-color: #ffffff;
-    --text-color: #2d3748;
-    --border-color: #e2e8f0;
+    --primary-color: #1e2d3d;       /* dark navy — header, footer, table header */
+    --accent-color: #2eb89a;        /* teal green — buttons, active states */
+    --background-color: #f0f2f5;    /* light gray — page background */
+    --surface-color: #ffffff;       /* white — form, table, cards */
+    --text-color: #2d3748;          /* dark gray — main text */
+    --border-color: #e2e8f0;        /* light gray — borders, lines */
 
 }
 
@@ -18,4 +18,58 @@ body {
     background-color: var(--background-color);
     font-family: 'Segoe UI', Arial, sans-serif;
     color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--surface-color);
+    text-align: center;
+    padding: 30px;
+}
+
+/* Form */
+.form-section {
+    padding: 20px;
+    background-color: var(--surface-color);
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr auto;
+    gap: 16px;
+    align-items: end;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 14px;
+    color: var(--text-color);
+    background-color: var(--surface-color);
+    font-family: inherit;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+button[type="submit"] {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: end;
+}
+
+button[type="submit"]:hover {
+    background-color: #25a085;
 }
