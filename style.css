@@ -1,4 +1,10 @@
 :root {
+    --primary-color: #1e2d3d;
+    --accent-color: #2eb89a;
+    --background-color: #f0f2f5;
+    --surface-color: #ffffff;
+    --text-color: #2d3748;
+    --border-color: #e2e8f0;
 
 }
 
@@ -6,4 +12,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: var(--text-color);
 }

@@ -58,7 +58,62 @@
       </div>
     </form>
   </section>
+
+  <section class="meter-section">
+    <p>
+      Budget Used:
+      <meter
+        id="budget-meter"
+        min="0"
+        max="5000"
+        value="0"
+        style="width: 100%"
+      ></meter>
+      <span id="meter-label">₱0 / ₱5000</span>
+    </p>
+  </section>
+
+  <section class="filter-section">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="food">Food</button>
+    <button class="filter-btn" data-filter="transport">Transport</button>
+    <button class="filter-btn" data-filter="entertainment">Entertainment</button>
+  </section>
+
+  <section class="table-section">
+    <table id="expense-table">
+
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Category</th>
+        <th>Amount</th>
+        <th>Action</th>
+      </tr>
+      </thead>
+
+      <tbody id="expense-body">
+      </tbody>
+
+      <tfoot>
+      <tr>
+        <td colspan="4">
+          <span id="entry-count">0 entries</span>
+        </td>
+      </tr>
+      </tfoot>
+
+    </table>
+  </section>
 </main>
+
+<footer id="summary-bar">
+  <span id="total-spent"></span>
+  <span id="remaining"></span>
+  <span id="entry-summary"></span>
+</footer>
+
+<div id="save-toast" class="toast hidden">Saved!</div>
 
 </body>
 </html>
