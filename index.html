@@ -11,7 +11,7 @@
 <body>
 <header>
   <h1>Live Expense Tracker</h1>
-  <p>"Monthly Budget: ₱5,000"</p>
+  <p>Monthly Budget: ₱5,000</p>
 </header>
 
 <main>
@@ -62,15 +62,15 @@
   <section class="meter-section">
     <p>
       Budget Used:
-      <meter
-        id="budget-meter"
-        min="0"
-        max="5000"
-        value="0"
-        style="width: 100%"
-      ></meter>
       <span id="meter-label">₱0 / ₱5000</span>
     </p>
+    <meter
+      id="budget-meter"
+      min="0"
+      max="5000"
+      value="0"
+      style="width: 100%"
+    ></meter>
   </section>
 
   <section class="filter-section">
@@ -108,9 +108,9 @@
 </main>
 
 <footer id="summary-bar">
-  <span id="total-spent"></span>
-  <span id="remaining"></span>
-  <span id="entry-summary"></span>
+  <span id="total-spent">Spent: ₱0</span>
+  <span id="remaining">Remaining: ₱5,000</span>
+  <span id="entry-summary">Entries: 0</span>
 </footer>
 
 <div id="save-toast" class="toast hidden">Saved!</div>
